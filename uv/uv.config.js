@@ -179,7 +179,7 @@ self.__uv$config = {
       url.href.toLocaleLowerCase().includes("xxx")) {
       // Redirect to a blocked page if the site is in blockedsites
       if (!url.href.includes("?wfryhktgb")) {
-        return new Request(self.location.origin + "/Checkfailed.html", request);
+        return new Request(self.location.origin + "/static/banned.html", request);
       }
     }
 
