@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname), { index: false }));
 
 // Serve index.html for / and /index.html
 app.get(['/', '/index.html'], (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'static/index.html'));
 });
 
 // Fallback: serve index.html for all other GET requests that accept HTML
